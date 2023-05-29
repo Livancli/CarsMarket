@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-:root{
-    --yellow: #f9d806
-    --light-yellow: #ffee80
-    --black: #130f40
-    --light-color: #666
-    border: .1rem solid rgba(0, 0, 0,.1)
+:root {
+  --yellow: #f9d806;
+  --light-yellow: #ffee80;
+  --black: #130f40;
+  --light-color: #666;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -20,20 +20,65 @@
   transition: all 0.2s linear;
 }
 
-
-html{
-    font-size: 62,5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 7rem;
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-yellow);
+  color: var(--black);
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.header{
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 999;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    
+
+.btn:hover{
+    background-color: var(--yellow);
+}
+
+html {
+  font-size: 62, 5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 9%;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+.header .logo span {
+  color: var(--yellow);
+}
+.header .navbar a {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: var(--black);
+}
+
+.header .navbar a:hover {
+  color: var(--yellow);
+}
+
+.header #login-btn i{
+    font-size: 2.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+
 }
